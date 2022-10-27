@@ -1,9 +1,11 @@
+import Layout from "../components/layout"
+
 function Predstavenstvo() {
   return(
-    <div>
+    <Layout>
       <h1>Stránka Představenstvo</h1>
-    </div>
-    
+      <p>Stránka se seznamem členů představenstva družstva</p>
+    </Layout>
   )
 }
 

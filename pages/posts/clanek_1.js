@@ -1,4 +1,3 @@
-import Link from "next/link"
 import Head from "next/head"
 import Layout from "../../components/layout"
 
@@ -10,9 +9,6 @@ function PrvniClanek() {
       </Head>
       
       <h1>První článek</h1>
-      <h2>
-        <Link href="/">Zpět na hlavní stránku</Link>
-      </h2>
     </Layout>
     
   )

@@ -1,21 +1,23 @@
 import Head from "next/head"
-import Link from "next/link"
+import Layout, {siteTitle} from "../components/layout"
+import utilStyles from "../styles/utils.module.css"
 
 
 function HomePage() {
   return(
-    <>
+    <Layout home>
       <Head>
-        <title>Domovská stránka</title>
+        <title>{siteTitle}</title>
       </Head>
       
-      <h1 className="title">Hlavní stránka webu</h1>
-
-      <ul>
-        <li><Link href="/posts/clanek_1">První článek</Link></li>
-        <li><Link href="/posts/clanek_2">Druhý článek</Link></li>
-      </ul>
-    </>
+      <section className={utilStyles.heading_md}>
+        <p>Výuková webová stránka pro výuku tvorby webu pomocí Next.js</p>
+        <p>
+        (This is a sample website - you’ll be building a site like this on{' '}
+          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+        </p>
+      </section>
+    </Layout>
   )
 }
 
